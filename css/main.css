@@ -41,6 +41,12 @@
 	src:url("../assets/fonts/iransans/iransansmobilefanum.ttf");
 }
 /*IRANSans Font*/
+
+html,
+body {
+	height: 100%;
+}
+
 body{
 	font-family:IRANSans;
 	background-image:url("../assets/img/bg-main.jpg");
