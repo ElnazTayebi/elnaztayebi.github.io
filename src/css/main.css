@@ -1,0 +1,240 @@
+
+/*IRANSans Font*/
+/*@font-face {*/
+	/*font-family: IRANSans;*/
+	/*font-style: normal;*/
+	/*font-weight: 700;*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb_Bold.eot);*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb_Bold.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/iransans/woff2/IRANSansWeb_Bold.woff2) format("woff2"), url(../assets/fonts/iransans/woff/IRANSansWeb_Bold.woff) format("woff"), url(../assets/fonts/iransans/ttf/IRANSansWeb_Bold.ttf) format("truetype")*/
+/*}*/
+/*@font-face {*/
+	/*font-family: IRANSans;*/
+	/*font-style: normal;*/
+	/*font-weight: 500;*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb_Medium.eot);*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb_Medium.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/iransans/woff2/IRANSansWeb_Medium.woff2) format("woff2"), url(../assets/fonts/iransans/woff/IRANSansWeb_Medium.woff) format("woff"), url(../assets/fonts/iransans/ttf/IRANSansWeb_Medium.ttf) format("truetype")*/
+/*}*/
+/*@font-face {*/
+	/*font-family: IRANSans;*/
+	/*font-style: normal;*/
+	/*font-weight: 300;*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb_Light.eot);*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb_Light.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/iransans/woff2/IRANSansWeb_Light.woff2) format("woff2"), url(../assets/fonts/iransans/woff/IRANSansWeb_Light.woff) format("woff"), url(../assets/fonts/iransans/ttf/IRANSansWeb_Light.ttf) format("truetype")*/
+/*}*/
+/*@font-face {*/
+	/*font-family: IRANSans;*/
+	/*font-style: normal;*/
+	/*font-weight: 200;*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb_UltraLight.eot);*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb_UltraLight.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/iransans/woff2/IRANSansWeb_UltraLight.woff2) format("woff2"), url(../assets/fonts/iransans/woff/IRANSansWeb_UltraLight.woff) format("woff"), url(../assets/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf) format("truetype")*/
+/*}*/
+/*@font-face {*/
+	/*font-family: IRANSans;*/
+	/*font-style: normal;*/
+	/*font-weight: 400;*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb.eot);*/
+	/*src: url(../assets/fonts/iransans/eot/IRANSansWeb.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/iransans/woff2/IRANSansWeb.woff2) format("woff2"), url(../assets/fonts/iransans/woff/IRANSansWeb.woff) format("woff"), url(../assets/fonts/iransans/ttf/IRANSansWeb.ttf) format("truetype")*/
+/*}*/
+
+@font-face {
+	font-family: "iransans";
+	src:url("../assets/fonts/iransans/iransansmobilefanum.ttf");
+}
+/*IRANSans Font*/
+body{
+	font-family:IRANSans;
+	background-image:url("../assets/img/bg-main.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	counter-reset : stepNo;
+}
+.span-ozviat{
+	background-image: linear-gradient(to right, #f6d365 , #f6d365,#ed7855 );
+	border-radius: 6px;
+	/* display: block; */
+	border: 0px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	color: #781cbb;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.phoneinput{
+	font-size: 20px;
+	letter-spacing: 0.2rem;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	padding: 11px 0 0 0;
+	line-height: 21px;
+}
+.submitbtn{
+	background-image: linear-gradient(to right, #f6d365 , #f6d365,#ed7855 );
+	border: 0px;
+	font-size: 19px;
+	border-radius: 10px;
+	color: #781cbb;
+	padding: 6px 0 0 0;
+	font-weight: bold;
+}
+.h2-vorood-shomare{
+	font-size: 36px;
+}
+.bevel{
+	-moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .2);
+	box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .2);
+}
+.shadowbox{
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.shadowtext{
+	text-shadow: 3px 3px 2px rgba(150, 150, 150, 0.5);
+}
+
+.h1title{
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.wizard {
+	counter-reset: stepNo;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.wizard-step {
+	-webkit-flex: 1 0 0px;
+	-ms-flex: 1 0 0px;
+	flex: 1 0 0px;
+	list-style: none;
+	padding: 0;
+	position: relative;
+}
+.wizard-step::before {
+	border-top: 2px solid #9f089d;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 5px;
+	top: 21px;
+	width: 192%;
+}
+.wizard-step:last-child {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.wizard-step:last-child::before {
+	border: 0;
+}
+
+.wizard-step-link {
+	color: white;
+	display: block;
+	font-size: 1rem;
+	font-weight: bold;
+	position: relative;
+	text-decoration: none;
+	z-index: 10;
+	text-align: center;
+}
+.wizard-step:first-child .wizard-step-link {
+	text-align: right;
+}
+.wizard-step:last-child .wizard-step-link {
+	text-align: left;
+}
+.wizard-step-link:before {
+	background-image: linear-gradient(to right, #9110bd,#6e1ab2 );
+	color: #fff;
+	counter-increment: stepNo;
+	content: counter(stepNo) " ";
+	display: block;
+	font-size: 24px;
+	height: 40px;
+	line-height: 49px;
+	margin-bottom: 12px;
+	text-align: center;
+	width: 40px;
+	border-radius: 8px;
+	margin-right:  auto;
+	margin-left:  auto;
+
+
+	-moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .2);
+	box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .2);
+}
+.wizard-step:first-child .wizard-step-link:before
+{
+	margin-right:  0px !important;
+}
+.wizard-step:last-child .wizard-step-link:before
+{
+	margin-left:  0px !important;
+}
+.wizard-step-link:hover,
+.wizard-step-link:focus {
+	/*color: #000;*/
+	text-decoration: none;
+}
+.stepin:before{
+	background-image: linear-gradient(to right, #f39618,#ffcb05 );
+	color: white;
+}
+a:hover {
+	color: white;
+}
+.img-hr{
+display: block;
+margin: 0 auto;
+	width: 50%;
+}
+/*Font Sizes*/
+.largefont{
+	font-size: 45px;
+}
+.mediumfont{
+	font-size: 20px;
+}
+.smallfont{
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+	.largefont{
+		font-size: 25px;
+	}
+	.mediumfont{
+		font-size: 15px;
+	}
+	.smallfont{
+		font-size: 11px;
+	}
+
+	.wizard-step-link:before {
+		font-size: 16px;
+		height: 30px;
+		line-height: 37px;
+		margin-bottom: 12px;
+		width: 30px;
+	}
+	.wizard-step::before {
+		top: 16px;
+	}
+	.h1title{
+		font-size: 43px;
+	}
+}
