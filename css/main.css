@@ -42,10 +42,7 @@
 }
 /*IRANSans Font*/
 
-html,
-body {
-	height: 100%;
-}
+html, body {      height:100%; }
 
 body{
 	font-family:IRANSans;
@@ -55,6 +52,20 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	counter-reset : stepNo;
+
+}
+.containerwraper{
+	min-height:100%;    position:relative;
+}
+.rowbody{
+	padding-bottom: 82px;
+}
+.footer{
+
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height: 82px;
 }
 .span-ozviat{
 	background-image: linear-gradient(to right, #f6d365 , #f6d365,#ed7855 );
@@ -118,8 +129,12 @@ body{
 	display: flex;
 	margin: 0;
 	padding: 0;
+/*position: absolute;*/
 }
 
+.formbody{
+	position: relative;
+}
 .wizard-step {
 	-webkit-flex: 1 0 0px;
 	-ms-flex: 1 0 0px;
