@@ -79,7 +79,7 @@ body{
 }
 .phoneinput{
 	font-size: 20px;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.3rem;
 	border-radius: 10px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	padding: 6px 0 0 0;
@@ -215,9 +215,7 @@ body{
 	background-image: linear-gradient(to right, #f39618,#ffcb05 );
 	color: white;
 }
-a:hover {
-	color: white;
-}
+
 .img-hr{
 display: block;
 margin: 0 auto;
@@ -258,4 +256,16 @@ margin: 0 auto;
 	.h1title{
 		font-size: 43px;
 	}
+}
+.correctionbtn{
+	background-image: linear-gradient(to right, #f6d365 , #f6d365,#ed7855 );
+	border: 0px;
+	font-size: 19px;
+	border-radius: 8px;
+	color: #781cbb;
+	padding: 6px 6px 0 6px;
+	font-weight: bold;
+}
+.countdown{
+font-size: 20px;
 }
