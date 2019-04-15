@@ -60,6 +60,9 @@ body{
 .rowbody{
 	padding-bottom: 82px;
 }
+.inputverification{
+	direction: ltr;
+}
 .footer{
 
 	position:absolute;
@@ -269,3 +272,5 @@ margin: 0 auto;
 .countdown{
 font-size: 20px;
 }
+
+

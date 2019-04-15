@@ -30,21 +30,20 @@
                         <button class="form-control input-box text-center my-3 submitbtn bevel">تایید</button>
                         <p class="text-white mediumfont my-3 shadowtext">اینترنت هدیه خود را دریافت کنید</p>
                     </div>
-                    <div id="step2" class="d-none">
+                    <div id="step2" class="">
                     <p class="text-white smallfont shadowtext">کد 4 رقمی عضویت و دریافت اینترنت قطعی هدیه، که برای شما </br>پیامک شده را به طور صحیح و کامل وارد نمایید. </p>
                     <!--<h5 class="text-white mediumfont shadowtext">اینترنت هدیه خود را دریافت نمایید</h5>-->
                     <!--<span type="text" class=" span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با تعرفه روزانه پانصد تومان</span>-->
                     <!--<img src="assets/img/hr.png" class="my-2 img-hr img-fluid">-->
-                    <input type="tel" class="form-control input-box text-center phoneinput bevel"
-                           placeholder="----">
+                        <input  type="text" data-inputmask="'mask': '9 9 9 9'"  class="text-center inputverification" style="direction: ltr"/>
                     <button class="form-control input-box text-center my-3 submitbtn bevel btn-disabled" disabled>ثبت کد تایید</button>
                     <button href="#" class="mediumfont bevel correctionbtn"> تصحیح شماره</button>
 
                     <!--<p class="text-white mediumfont my-3 shadowtext">اینترنت هدیه خود را دریافت کنید</p>-->
                     <div class="countdown text-white mt-5 largefontfont"></div>
-                    <p class="smallfont">تا پیش از پایان 2 دقیقه جهت ارسال کد تایید دریافت اینترنت قطعی </br>هدیه اقدام کنید </p>
+                    <p class="smallfont text-white">تا پیش از پایان 2 دقیقه جهت ارسال کد تایید دریافت اینترنت قطعی </br>هدیه اقدام کنید </p>
                 </div>
-                    <div id="step3" class="">
+                    <div id="step3" class="d-none">
                         <h2 class="text-white largefont">خوش آمدید </h2>
                         <!--<h5 class="text-white mediumfont shadowtext">اینترنت هدیه خود را دریافت نمایید</h5>-->
                         <!--<span type="text" class=" span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با تعرفه روزانه پانصد تومان</span>-->
@@ -90,9 +89,13 @@
 
     </div>
 
+
+
+
 </div>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/javascript.js"></script>
+<script src="js/jquery.inputmask.bundle.js"></script>
 <script src="./js/myjavascript.js"></script>
 </body>
 
