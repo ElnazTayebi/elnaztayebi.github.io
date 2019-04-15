@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,94 +10,90 @@
 
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-<div class="container-fluid containerwraper">
-    <div class="row rowbody">
-        <div class="col-md-4 "></div>
-        <div class="col-md-4  text-center">
+    <div class="container-fluid containerwraper">
+        <div class="row rowbody">
+            <div class="col-md-4 "></div>
+            <div class="col-md-4  text-center">
 
 
-            <form>
-                <div class="form-group my-2">
-                    <h1 class="h1title text-white shadowtext">بمناسبت روز جوان</h1>
-                    <img src="assets/img/bg1.png" class="img-fluid mt-2">
-                    <div id="step1" class="d-none">
-                        <h2 class="text-white largefont shadowtext">شماره تان را وارد کنید و</h2>
-                        <h5 class="text-white mediumfont shadowtext">اینترنت هدیه خود را دریافت نمایید</h5>
-                        <span type="text" class=" span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با تعرفه روزانه پانصد تومان</span>
-                        <img src="assets/img/hr.png" class="my-2 img-hr img-fluid">
-                        <input type="tel" class="form-control input-box text-center phoneinput bevel"
-                               placeholder="*********09">
-                        <button class="form-control input-box text-center my-3 submitbtn bevel">تایید</button>
-                        <p class="text-white mediumfont my-3 shadowtext">اینترنت هدیه خود را دریافت کنید</p>
+                <form>
+                    <div class="form-group my-2">
+                        <h1 class="h1title text-white shadowtext">بمناسبت روز جوان</h1>
+                        <img src="assets/img/bg1.png" class="img-fluid mt-2">
+                        <div id="step1" class="d-none">
+                            <h2 class="text-white largefont shadowtext">شماره تان را وارد کنید و</h2>
+                            <h5 class="text-white mediumfont shadowtext">اینترنت هدیه خود را دریافت نمایید</h5>
+                            <span type="text" class=" span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با
+                                تعرفه روزانه پانصد تومان</span>
+                            <img src="assets/img/hr.png" class="my-2 img-hr img-fluid">
+                            <input type="tel" class="form-control input-box text-center phoneinput bevel"
+                                placeholder="*********09">
+                            <button class="form-control input-box text-center my-3 submitbtn bevel">تایید</button>
+                            <p class="text-white mediumfont my-3 shadowtext">اینترنت هدیه خود را دریافت کنید</p>
+                        </div>
+                        <div id="step2" class="">
+                            <p class="text-white smallfont shadowtext">کد 4 رقمی عضویت و دریافت اینترنت قطعی هدیه، که
+                                برای شما </br>پیامک شده را به طور صحیح و کامل وارد نمایید. </p>
+                            <!--<input type="tel" class="form-control input-box text-center phoneinput bevel"-->
+                                <!--placeholder="&#45;&#45;&#45;&#45;">-->
+                            <input  type="text" data-inputmask="'mask': '9 9 9 9'"  class="text-center inputverification" style="direction: ltr"/>
+                            <button class="form-control input-box text-center my-3 submitbtn bevel btn-disabled"
+                                disabled>ثبت کد تایید</button>
+                            <button href="#" class="mediumfont bevel correctionbtn"> تصحیح شماره</button>
+
+                            <div id="clock" class="countdown text-white mt-3 largefontfont"></div>
+                            <p class="smallfont text-white">تا پیش از پایان 2 دقیقه جهت ارسال کد تایید اقدام کنید </p>
+                        </div>
+                        <div id="step3" class="d-none">
+                            <p class="text-white mediumfont">شما با موفقیت در سرویس فندق عضو شدید</p>  
+                        </div>
                     </div>
-                    <div id="step2" class="">
-                    <p class="text-white smallfont shadowtext">کد 4 رقمی عضویت و دریافت اینترنت قطعی هدیه، که برای شما </br>پیامک شده را به طور صحیح و کامل وارد نمایید. </p>
-                    <!--<h5 class="text-white mediumfont shadowtext">اینترنت هدیه خود را دریافت نمایید</h5>-->
-                    <!--<span type="text" class=" span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با تعرفه روزانه پانصد تومان</span>-->
-                    <!--<img src="assets/img/hr.png" class="my-2 img-hr img-fluid">-->
-                        <input  type="text" data-inputmask="'mask': '9 9 9 9'"  class="text-center inputverification" style="direction: ltr"/>
-                    <button class="form-control input-box text-center my-3 submitbtn bevel btn-disabled" disabled>ثبت کد تایید</button>
-                    <button href="#" class="mediumfont bevel correctionbtn"> تصحیح شماره</button>
-
-                    <!--<p class="text-white mediumfont my-3 shadowtext">اینترنت هدیه خود را دریافت کنید</p>-->
-                    <div class="countdown text-white mt-5 largefontfont"></div>
-                    <p class="smallfont text-white">تا پیش از پایان 2 دقیقه جهت ارسال کد تایید دریافت اینترنت قطعی </br>هدیه اقدام کنید </p>
-                </div>
-                    <div id="step3" class="d-none">
-                        <h2 class="text-white largefont">خوش آمدید </h2>
-                        <!--<h5 class="text-white mediumfont shadowtext">اینترنت هدیه خود را دریافت نمایید</h5>-->
-                        <!--<span type="text" class=" span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با تعرفه روزانه پانصد تومان</span>-->
-                        <!--<img src="assets/img/hr.png" class="my-2 img-hr img-fluid">-->
-
-                        <!--<p class="text-white mediumfont my-3 shadowtext">اینترنت هدیه خود را دریافت کنید</p>-->
-
+                    <div class="form-group">
                     </div>
-                </div>
-                <div class="form-group">
-                </div>
-
-
-            </form>
+                </form>
+            </div>
+            <div class="col-md-4 "></div>
         </div>
-        <div class="col-md-4 "></div>
-    </div>
 
-    <div class="row footer">
-        <div class="col-md-4 "></div>
-        <div class="col-md-4  text-center">
-
-
-            <ul class="wizard">
-                <li class="wizard-step">
+        <div class="row footer">
+            <div class="col-md-4 "></div>
+            <div class="col-md-4  text-center">
+                <ul class="wizard">
+                    <li class="wizard-step">
                         <span class="wizard-step-link mediumfont shadowtext stepin">
-                           ثبت شماره
+                            ثبت شماره
                         </span>
-                </li>
-                <li class="wizard-step">
+                    </li>
+                    <li class="wizard-step">
                         <span class="wizard-step-link mediumfont shadowtext">
                             ثبت کد تایید
                         </span>
-                </li>
-                <li class="wizard-step">
+                    </li>
+                    <li class="wizard-step">
                         <span class="wizard-step-link mediumfont shadowtext">
                             دریافت هدیه
                         </span>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 "></div>
+
         </div>
-        <div class="col-md-4 "></div>
 
     </div>
+
 
 
 
 
 </div>
 <script src="./js/jquery.min.js"></script>
-<script src="./js/javascript.js"></script>
 <script src="js/jquery.inputmask.bundle.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
 <script src="./js/myjavascript.js"></script>
+
 </body>
 
 </html>
