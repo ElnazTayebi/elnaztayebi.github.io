@@ -2,7 +2,7 @@
 
 
 
-$(":input").inputmask();
+$(".inputverification").inputmask();
 
 
 
@@ -17,6 +17,6 @@ var timestr = time.getFullYear()+'/'+(time.getMonth()+1)+"/"+time.getDate()+" "+
 $('#clock').countdown(timestr, function(event) {
     $(this).html(event.strftime('%M:%S'));
   }).on('finish.countdown', function(e){
-      alert("finish")
+      //alert("finish")
   });
 
