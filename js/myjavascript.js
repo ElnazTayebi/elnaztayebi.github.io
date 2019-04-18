@@ -1,6 +1,8 @@
 $(function () {
     $(":input").inputmask();
-
+    // var mobileinput = document.getElementById("mobileinput");
+    //Inputmask(a,"9", { repeat: 10 }).mask(mobileinput);
+    $("#mobileinput").inputmask("0\\9999999999");
 
 
 
@@ -19,25 +21,26 @@ $(function () {
 
 
     //Call OTP Request
-    var tkey = "KeyPNakh";
-    var sid = "2762";
-    var to = "10";
-    var otpurl = "http://79.175.138.108:8090/webAppInline/sub"
+    var tkey = "KeyFnd2";
+    var sid = "2766";
+    var to = "12";
+    var from = $("#mobileinput").val();
+    var basedomain = "http://localhost:5000";
+    var otpurl = basedomain + "/api/App/OTP"
 
-    $("#otprequestbtn").click(function(e){
+    $("#otprequestbtn").click(function (e) {
         e.preventDefault();
         $.ajax({
             url: otpurl,
             type: 'POST',
-            headers: {  'Tkey': tkey, 'SID': sid },
-            data: { 'From': '989901359936', 'To': to },
-            datatype: 'jsonp',
+            data: { 'From': from, 'To': to, 'Tkey': tkey, 'SID': sid },
+            datatype: 'json',
             success: function (data) { alert(data); },
             error: function (jqXHR, textStatus, errorThrown) { alert(textStatus); }
         });
     });
 
-    
+
 
 
 });
