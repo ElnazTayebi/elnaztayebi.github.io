@@ -6,6 +6,7 @@ $(function () {
 
 
 
+$(".inputverification").inputmask();
 
 
     var time = new Date();
@@ -24,11 +25,12 @@ $(function () {
     var tkey = "KeyFnd2";
     var sid = "2766";
     var to = "12";
-    var from = $("#mobileinput").val();
+    var from;
     var basedomain = "http://localhost:5000";
     var otpurl = basedomain + "/api/App/OTP"
 
     $("#otprequestbtn").click(function (e) {
+        from = $("#mobileinput").val();
         e.preventDefault();
         $.ajax({
             url: otpurl,
@@ -44,8 +46,6 @@ $(function () {
 
 
 });
-
-
 
 
 

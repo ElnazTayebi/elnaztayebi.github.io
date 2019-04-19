@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAS Landing 1</title>
+    <title>بمناسبت نیمه شعبان</title>
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
 
 
@@ -20,15 +20,18 @@
 
                 <form>
                     <div class="form-group my-2">
-                        <h1 class="h1title text-white shadowtext">بمناسبت روز جوان</h1>
+                        <h1 class="h1title text-white shadowtext">بمناسبت نیمه شعبان</h1>
                         <img src="assets/img/bg1.png" class="img-fluid mt-2">
+                        <div id="alertbox" class="alert alert-warning d-none" role="alert">
+                            خطایی رخ داده است
+                          </div>
                         <div id="step1" class="">
                             <h2 class="text-white largefont shadowtext">شماره تان را وارد کنید و</h2>
                             <h5 class="text-white mediumfont shadowtext">اینترنت هدیه خود را دریافت نمایید</h5>
-                            <span type="text" class=" span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با
+                            <span type="text" class="span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با
                                 تعرفه روزانه پانصد تومان</span>
                             <img src="assets/img/hr.png" class="my-2 img-hr img-fluid">
-                            <input id="mobileinput" class="form-control input-box text-center phoneinput bevel"/>
+                            <input id="mobileinput" type="text" class="form-control input-box text-center phoneinput bevel" autofocus/>
                             <button id="otprequestbtn" class="form-control input-box text-center my-3 submitbtn bevel">تایید</button>
                             <p class="text-white mediumfont my-3 shadowtext">اینترنت هدیه خود را دریافت کنید</p>
                         </div>
@@ -37,10 +40,9 @@
                                 برای شما </br>پیامک شده را به طور صحیح و کامل وارد نمایید. </p>
                             <!--<input type="tel" class="form-control input-box text-center phoneinput bevel"-->
                                 <!--placeholder="&#45;&#45;&#45;&#45;">-->
-                            <input  type="text" data-inputmask="'mask': '9 9 9 9'"  class="text-center phoneinput  form-control" autofocus/>
-                            <button class="form-control input-box text-center my-3 submitbtn bevel btn-disabled"
-                                disabled>ثبت کد تایید</button>
-                            <button href="#" class="mediumfont bevel correctionbtn"> تصحیح شماره</button>
+                            <input id="verificationcode" type="text" class="text-center phoneinput form-control"/>
+                            <button id="submitverificationcode" class="form-control input-box text-center my-3 submitbtn bevel">ثبت کد تایید</button>
+                            <button id="otpresubmit" class="mediumfont bevel correctionbtn btn-disabled" disabled> ارسال مجدد کد</button>
 
                             <div id="clock" class="countdown text-white mt-3 largefontfont"></div>
                             <p class="smallfont text-white">تا پیش از پایان 2 دقیقه جهت ارسال کد تایید اقدام کنید </p>
@@ -61,17 +63,17 @@
             <div class="col-md-4  text-center">
                 <ul class="wizard">
                     <li class="wizard-step">
-                        <span class="wizard-step-link mediumfont shadowtext stepin">
+                        <span id="stepno1" class="wizard-step-link mediumfont shadowtext stepin">
                             ثبت شماره
                         </span>
                     </li>
                     <li class="wizard-step">
-                        <span class="wizard-step-link mediumfont shadowtext">
+                        <span id="stepno2" class="wizard-step-link mediumfont shadowtext">
                             ثبت کد تایید
                         </span>
                     </li>
                     <li class="wizard-step">
-                        <span class="wizard-step-link mediumfont shadowtext">
+                        <span id="stepno3" class="wizard-step-link mediumfont shadowtext">
                             دریافت هدیه
                         </span>
                     </li>
@@ -91,7 +93,7 @@
 <script src="./js/jquery.min.js"></script>
 <script src="js/jquery.inputmask.bundle.js"></script>
 <script src="js/jquery.countdown.min.js"></script>
-<script src="./js/myjavascript.js"></script>
+<script src="./js/main.js"></script>
 
 </body>
 

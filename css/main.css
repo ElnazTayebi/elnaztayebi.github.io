@@ -193,12 +193,12 @@ body{
 	counter-increment: stepNo;
 	content: counter(stepNo) " ";
 	display: block;
-	font-size: 24px;
-	height: 40px;
-	line-height: 49px;
+	font-size: 16px;
+	height: 30px;
+	line-height: 37px;
 	margin-bottom: 12px;
 	text-align: center;
-	width: 40px;
+	width: 30px;
 	border-radius: 8px;
 	margin-right:  auto;
 	margin-left:  auto;
@@ -225,22 +225,68 @@ body{
 	background-image: linear-gradient(to right, #f39618,#ffcb05 );
 	color: white;
 }
-
+.correctionbtn{
+	background-image: linear-gradient(to right, #f6d365 , #f6d365,#ed7855 );
+	border: 0px;
+	font-size: 19px;
+	border-radius: 8px;
+	color: #781cbb;
+	padding: 6px 6px 0 6px;
+	font-weight: bold;
+}
+.correctionbtn:disabled{
+	background-color: #e6e6e6;
+    background-image: none;
+    color: #929292;
+}
+.countdown{
+	font-size: 20px;
+}
 .img-hr{
 display: block;
 margin: 0 auto;
 	width: 50%;
 }
 /*Font Sizes*/
-.largefont{
-	font-size: 45px;
-}
-.mediumfont{
-	font-size: 20px;
-}
-.smallfont{
-	font-size: 14px;
-}
+
+/*@media only screen and (max-width: 600px) {*/
+	/*.largefont{*/
+		/*font-size: 25px;*/
+	/*}*/
+	/*.mediumfont{*/
+		/*font-size: 15px;*/
+	/*}*/
+	/*.smallfont{*/
+		/*font-size: 11px;*/
+	/*}*/
+
+	/*.wizard-step-link:before {*/
+		/*font-size: 16px;*/
+		/*height: 30px;*/
+		/*line-height: 37px;*/
+		/*margin-bottom: 12px;*/
+		/*width: 30px;*/
+	/*}*/
+	/*.wizard-step::before {*/
+		/*top: 16px;*/
+	/*}*/
+	/*.h1title{*/
+		/*font-size: 43px;*/
+	/*}*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
 	.largefont{
@@ -253,13 +299,13 @@ margin: 0 auto;
 		font-size: 11px;
 	}
 
-	.wizard-step-link:before {
-		font-size: 16px;
-		height: 30px;
-		line-height: 37px;
-		margin-bottom: 12px;
-		width: 30px;
-	}
+	/*.wizard-step-link:before {*/
+		/*font-size: 16px;*/
+		/*height: 30px;*/
+		/*line-height: 37px;*/
+		/*margin-bottom: 12px;*/
+		/*width: 30px;*/
+	/*}*/
 	.wizard-step::before {
 		top: 16px;
 	}
@@ -267,17 +313,137 @@ margin: 0 auto;
 		font-size: 43px;
 	}
 }
-.correctionbtn{
-	background-image: linear-gradient(to right, #f6d365 , #f6d365,#ed7855 );
-	border: 0px;
-	font-size: 19px;
-	border-radius: 8px;
-	color: #781cbb;
-	padding: 6px 6px 0 6px;
-	font-weight: bold;
-}
-.countdown{
-font-size: 20px;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.largefont{
+		font-size: 25px;
+	}
+	.mediumfont{
+		font-size: 15px;
+	}
+	.smallfont{
+		font-size: 11px;
+	}
+
+	/*.wizard-step-link:before {*/
+		/*font-size: 16px;*/
+		/*height: 30px;*/
+		/*line-height: 37px;*/
+		/*margin-bottom: 12px;*/
+		/*width: 30px;*/
+	/*}*/
+	.wizard-step::before {
+		top: 16px;
+	}
+	.h1title{
+		font-size: 43px;
+	}
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.largefont{
+		font-size: 25px;
+	}
+	.mediumfont{
+		font-size: 15px;
+	}
+	.smallfont{
+		font-size: 9px;
+	}
 
+	/*.wizard-step-link:before {*/
+		/*font-size: 16px;*/
+		/*height: 30px;*/
+		/*line-height: 37px;*/
+		/*margin-bottom: 12px;*/
+		/*width: 30px;*/
+	/*}*/
+	.wizard-step::before {
+		top: 16px;
+	}
+	.h1title{
+		font-size: 35px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.largefont{
+		font-size: 25px;
+	}
+	.mediumfont{
+		font-size: 15px;
+	}
+	.smallfont{
+		font-size: 11px;
+	}
+
+	/*.wizard-step-link:before {*/
+		/*font-size: 16px;*/
+		/*height: 30px;*/
+		/*line-height: 37px;*/
+		/*margin-bottom: 12px;*/
+		/*width: 30px;*/
+	/*}*/
+	.wizard-step::before {
+		top: 16px;
+	}
+	.h1title{
+		font-size: 43px;
+	}
+}
+/*@media only screen and (max-width: 992px) {*/
+	/*.largefont{*/
+		/*font-size: 25px;*/
+	/*}*/
+	/*.mediumfont{*/
+		/*font-size: 15px;*/
+	/*}*/
+	/*.smallfont{*/
+		/*font-size: 11px;*/
+	/*}*/
+
+	/*.wizard-step-link:before {*/
+		/*font-size: 16px;*/
+		/*height: 30px;*/
+		/*line-height: 37px;*/
+		/*margin-bottom: 12px;*/
+		/*width: 30px;*/
+	/*}*/
+	/*.wizard-step::before {*/
+		/*top: 16px;*/
+	/*}*/
+	/*.h1title{*/
+		/*font-size: 35px;*/
+	/*}*/
+/*}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.largefont{
+		font-size: 45px;
+	}
+	.mediumfont{
+		font-size: 20px;
+	}
+	.smallfont{
+		font-size: 14px;
+	}
+
+
+	/*.wizard-step-link:before {*/
+		/*font-size: 16px;*/
+		/*height: 30px;*/
+		/*line-height: 37px;*/
+		/*margin-bottom: 12px;*/
+		/*width: 30px;*/
+	/*}*/
+	.wizard-step::before {
+		top: 16px;
+	}
+	.h1title{
+		font-size: 70px;
+	}
+}
