@@ -1,7 +1,10 @@
 $(function () {
-    // $("#mobileinput").inputmask("0\\9999999999", { clearMaskOnLostFocus: false });
+    //Fit Header text
+    jQuery(".h1title").fitText(1);
+    jQuery("#entermobileh2").fitText(1.5);
+    
     $("#mobileinput").inputmask("99999999999", { clearMaskOnLostFocus: false });
-   
+
     //Call OTP Request
     var tkey = "KeyFnd2";
     var sid = "2766";
@@ -14,6 +17,9 @@ $(function () {
 
     $("#otprequestbtn").click(function (e) {
         e.preventDefault();
+        // Preloader Area
+        $('.preloader-area').fadeIn("fast");
+
         from = $("#mobileinput").val();
         var myData = JSON.stringify({ 'From': from, 'To': to, 'Tkey': tkey, 'SID': sid });
         $.ajax({
@@ -44,12 +50,20 @@ $(function () {
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $("#alertbox").show();
+            },
+            complete: function (jqXHR, textStatus) {
+                // Preloader Area
+                $('.preloader-area').fadeOut("fast");
             }
         });
+
     });
 
     $("#otpresubmit").click(function (e) {
         e.preventDefault();
+        // Preloader Area
+        $('.preloader-area').fadeIn("fast");
+
         from = $("#mobileinput").val();
         var myData = JSON.stringify({ 'From': from, 'To': to, 'Tkey': tkey, 'SID': sid });
         $.ajax({
@@ -73,12 +87,20 @@ $(function () {
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $("#alertbox").show();
+            },
+            complete: function (jqXHR, textStatus) {
+                // Preloader Area
+                $('.preloader-area').fadeOut("fast");
             }
         });
+
     });
 
     $("#submitverificationcode").click(function (e) {
         e.preventDefault();
+        // Preloader Area
+        $('.preloader-area').fadeIn("fast");
+
         from = $("#mobileinput").val();
         smscode = $("#verificationcode").val().replace(/\s/g, '');
         var source = getUrlVars()["source"];
@@ -108,8 +130,13 @@ $(function () {
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $("#alertbox").show();
+            },
+            complete: function (jqXHR, textStatus) {
+                // Preloader Area
+                $('.preloader-area').fadeOut("fast");
             }
         });
+        
     });
 
 
@@ -119,7 +146,7 @@ $(function () {
 function startTimer() {
     var time = new Date();
     //alert(time);
-    time.setMinutes(time.getMinutes() + 1);
+    time.setMinutes(time.getMinutes() + 2);
     var timestr = time.getFullYear() + '/' + (time.getMonth() + 1) + "/" + time.getDate() + " " + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
     //alert(timestr)
     $('#clock').countdown(timestr, function (event) {

@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
 
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
+    <div class="preloader-area">
+        <div class="lds-hourglass"></div>
+    </div>
+
     <div class="container-fluid containerwraper">
         <div class="row rowbody">
             <div class="col-md-4 "></div>
@@ -24,31 +28,35 @@
                         <img src="assets/img/bg1.png" class="img-fluid mt-2">
                         <div id="alertbox" class="alert alert-warning d-none" role="alert">
                             خطایی رخ داده است
-                          </div>
+                        </div>
                         <div id="step1" class="">
-                            <h2 class="text-white largefont shadowtext">شماره تان را وارد کنید و</h2>
+                            <h2 id="entermobileh2" class="text-white largefont shadowtext">شماره تان را وارد کنید و</h2>
                             <h5 class="text-white mediumfont shadowtext">اینترنت هدیه خود را دریافت نمایید</h5>
                             <span type="text" class="span-ozviat smallfont text-center bevel">عضویت در اپلیکیشن فندق با
                                 تعرفه روزانه پانصد تومان</span>
                             <img src="assets/img/hr.png" class="my-2 img-hr img-fluid">
-                            <input id="mobileinput" type="text" class="form-control input-box text-center phoneinput bevel" autofocus/>
-                            <button id="otprequestbtn" class="form-control input-box text-center my-3 submitbtn bevel">تایید</button>
+                            <input id="mobileinput" type="text"
+                                class="form-control input-box text-center phoneinput bevel" autofocus />
+                            <button id="otprequestbtn"
+                                class="form-control input-box text-center my-3 submitbtn bevel">تایید</button>
                             <p class="text-white mediumfont my-3 shadowtext">اینترنت هدیه خود را دریافت کنید</p>
                         </div>
                         <div id="step2" class="d-none">
                             <p class="text-white smallfont shadowtext">کد 4 رقمی عضویت و دریافت اینترنت قطعی هدیه، که
                                 برای شما </br>پیامک شده را به طور صحیح و کامل وارد نمایید. </p>
                             <!--<input type="tel" class="form-control input-box text-center phoneinput bevel"-->
-                                <!--placeholder="&#45;&#45;&#45;&#45;">-->
-                            <input id="verificationcode" type="text" class="text-center phoneinput form-control"/>
-                            <button id="submitverificationcode" class="form-control input-box text-center my-3 submitbtn bevel">ثبت کد تایید</button>
-                            <button id="otpresubmit" class="mediumfont bevel correctionbtn btn-disabled" disabled> ارسال مجدد کد</button>
+                            <!--placeholder="&#45;&#45;&#45;&#45;">-->
+                            <input id="verificationcode" type="text" class="text-center phoneinput form-control" />
+                            <button id="submitverificationcode"
+                                class="form-control input-box text-center my-3 submitbtn bevel">ثبت کد تایید</button>
+                            <button id="otpresubmit" class="mediumfont bevel correctionbtn btn-disabled" disabled> ارسال
+                                مجدد کد</button>
 
                             <div id="clock" class="countdown text-white mt-3 largefontfont"></div>
                             <p class="smallfont text-white">تا پیش از پایان 2 دقیقه جهت ارسال کد تایید اقدام کنید </p>
                         </div>
                         <div id="step3" class="d-none">
-                            <p class="text-white mediumfont">شما با موفقیت در سرویس فندق عضو شدید</p>  
+                            <p class="text-white mediumfont">شما با موفقیت در سرویس فندق عضو شدید</p>
                         </div>
                     </div>
                     <div class="form-group">
@@ -89,11 +97,12 @@
 
 
 
-</div>
-<script src="./js/jquery.min.js"></script>
-<script src="js/jquery.inputmask.bundle.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="./js/main.js"></script>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.fittext.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 
